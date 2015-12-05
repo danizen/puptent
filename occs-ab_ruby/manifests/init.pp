@@ -19,7 +19,9 @@
 #
 # Daniel Davis <daniel.davis@nih.gov>
 #
-class ab_ruby {
+class ab_ruby(
+  $devel = $ab_ruby::params::devel
+) extends ab_ruby::params {
 
   if $osfamily != 'RedHat' {
     warning('occs_ruby: this is not a RedHat box')
@@ -27,7 +29,7 @@ class ab_ruby {
     package { 'rh-ruby22':
       ensure => 'present'
     }
-    if $ab_ruby_devel {
+    if $devel {
       package { 'rh-ruby22-ruby-devel':
         ensure => 'present' 
       }

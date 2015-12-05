@@ -19,15 +19,16 @@
 #
 # Daniel Davis <daniel.davis@nih.gov>
 #
-class ab_python {
-
-  if $osfamily != 'RedHat' {
+class ab_python(
+  $devel => $ab_python::params::devel
+) extends ab_python::params {
+  if $::osfamily != 'RedHat' {
     warning('occs_python: this is not a RedHat box')
   } else {
     package { 'rh-python34':
       ensure => 'present'
     }
-    if $ab_python_devel {
+    if $devel {
       package { 'rh-python34-python-devel':
         ensure => 'present' 
       }
