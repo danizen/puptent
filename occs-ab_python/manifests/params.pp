@@ -1,3 +1,7 @@
 class ab_python::params {
-  $devel = false
+  if ($hostname =~ /^d/) {
+    $devel = true
+  } else {
+    $devel = nil
+  }
 }

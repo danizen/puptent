@@ -1,3 +1,7 @@
 class ab_ruby::params {
-  $devel = false
+  if ($hostname =~ /^d/) {
+    $devel = true
+  } else {
+    $devel = nil
+  }
 }
