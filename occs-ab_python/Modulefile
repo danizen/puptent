@@ -1,0 +1,9 @@
+name    'occs-ab_python'
+version '0.1.0'
+source 'Custom'
+author 'OCCS/AB'
+license 'Apache License, Version 2.0'
+summary 'Install python 3.4 from rh-python34 software collection'
+description ''
+project_page ''
+

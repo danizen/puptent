@@ -1,0 +1,9 @@
+name    'occs-ab_ruby'
+version '0.1.0'
+source 'custom'
+author 'OCCS/AB'
+license 'Apache License, Version 2.0'
+summary 'Installs ruby from rh-ruby22 software collection'
+description ''
+project_page ''
+
