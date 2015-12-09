@@ -1,0 +1,9 @@
+name    'occs-ab_httpd'
+version '0.1.0'
+source 'Custom'
+author 'OCCS/AB'
+license 'Apache License, Version 2.0'
+summary 'Install user and initscript for OCCS/AB httpd'
+description ''
+project_page ''
+
