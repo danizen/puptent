@@ -21,7 +21,7 @@
 #
 class ab_ruby(
   $devel = $ab_ruby::params::devel
-) extends ab_ruby::params {
+) inherits ab_ruby::params {
 
   if $osfamily != 'RedHat' {
     warning('ab_ruby: this is not a RedHat box')
