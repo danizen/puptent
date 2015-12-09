@@ -32,7 +32,6 @@ class ab_gcc {
             'pkgconfig',
             'redhat-rpm-config',
             'rpm-build',
-            'rpm-sign',
             'byacc',
             'cscope',
             'ctags',

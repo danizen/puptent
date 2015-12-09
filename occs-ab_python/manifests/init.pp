@@ -43,7 +43,6 @@ class ab_python(
                 'libxml2',
                 'libgpg-error',
                 'zlib',
-                'nss-softokn-freetbl',
                 'krb5-libs',
                 'libcom_err' ]:
         ensure => 'present'
@@ -57,6 +56,7 @@ class ab_python(
       # needed to build/rebuild installed python modules
       package { [ 'mysql-devel',
                   'openssl-devel',
+                  'libxslt-devel',
                   'gmp-devel',
                   'keyutils-libs-devel',
                   'libgcrypt-devel',
