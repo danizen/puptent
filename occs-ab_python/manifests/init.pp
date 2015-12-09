@@ -22,8 +22,10 @@
 class ab_python(
   $devel => $ab_python::params::devel
 ) extends ab_python::params {
-  if $::osfamily != 'RedHat' {
-    warning('occs_python: this is not a RedHat box')
+  if $osfamily != 'RedHat' {
+    warning('ab_python: this is not a RedHat box')
+  } elsif $ab_python_have_repo != 1 {
+    warning('ab_python: software collection not available')
   } else {
     package { 'rh-python34':
       ensure => 'present'

@@ -24,7 +24,9 @@ class ab_ruby(
 ) extends ab_ruby::params {
 
   if $osfamily != 'RedHat' {
-    warning('occs_ruby: this is not a RedHat box')
+    warning('ab_ruby: this is not a RedHat box')
+  } elsif $ab_ruby_have_repo != 1 {
+    warning('ab_ruby: software collection not available')
   } else {
     package { 'rh-ruby22':
       ensure => 'present'
