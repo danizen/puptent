@@ -1,17 +1,15 @@
 # ab_tomcat
 
+## License
 
-License
--------
-This is a public work of U.S. National Library of Medicine
+Public Domain
 
+## Contact
 
-Contact
--------
 daniel.davis@nih.gov
 
 
-Support
--------
+## Support
 
 Please log tickets and issues at our [JIRA project](https://jira.nlm.nih.gov)
+
