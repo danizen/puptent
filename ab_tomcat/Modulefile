@@ -1,6 +1,6 @@
 name    'occs-ab_tomcat'
-version '0.1.0'
-source 'UNKNOWN'
+version '0.2.1'
+source 'https://github.com/danizen/puptent/ab_tomcat'
 author 'occs'
 license 'Public Domain'
 summary 'Install Apache Tomcat for NLM OCCS/AB'

@@ -2,5 +2,5 @@
 class { 'ab_tomcat':
   user => 'davisda4',
   group => 'occs',
-  home => '/home/davisda4/puptest'
+  home => '/home/davisda4/test2'
 }

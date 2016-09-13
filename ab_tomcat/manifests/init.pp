@@ -39,7 +39,9 @@ class ab_tomcat(
   file { "${home}/${tomcat_file}":
     source      => $tomcat_source,
     mode        => '0644',
-    notify      => Exec['apps-tomcat-unzip']
+    owner       => $user,
+    group       => $group,
+    notify      => Exec['apps-tomcat-unzip'],
   }
 
   exec { 'apps-tomcat-unzip':
