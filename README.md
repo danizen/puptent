@@ -13,6 +13,10 @@ puppet apply --modulepath . -e 'include ab_python'
 
 Daniel Davis <daniel.davis@nih.gov>
 
+## Vagrantfile
+
+The Vagrantfile defines a CentOS 7 system with enough stuff installed to test this software from the /vagrant mapped directory.
+
 ## ab_tomcat
 
 This one is written to be run by the platform user.  
